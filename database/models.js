@@ -4,7 +4,6 @@ const contentReviewSchema = new mongoose.Schema({
   userId: {
     type: String,
     required: true,
-    unique: true, // For efficiency in some scenarios
   },
   contentId: {
     type: String,
