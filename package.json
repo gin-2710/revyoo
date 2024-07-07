@@ -1,0 +1,19 @@
+{
+  "name": "revyoo",
+  "version": "1.0.0",
+  "description": "A discord bot to review movies, TV shows, anime, music and everything fun!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "index.js"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gin-2710/revyoo.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "3.1.4"
+  }
+}
