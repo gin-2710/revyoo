@@ -44,4 +44,4 @@ contentReviewSchema.pre("save", function (next) {
   next();
 });
 
-export default mongoose.model("ContentReview", contentReviewSchema);
+export default mongoose.model("revyoo", contentReviewSchema);

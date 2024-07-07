@@ -9,7 +9,7 @@ const password = process.env.mongoDB_password;
 const connectionString =
   "mongodb+srv://singingginsinkothis:" +
   password +
-  "@revyoo.k1n68s8.mongodb.net/?appName=revyoo";
+  "@revyoo.k1n68s8.mongodb.net/revyoo?appName=revyoo";
 
 //The function to connect to our DB
 const connectDB = async () => {
