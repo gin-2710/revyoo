@@ -5,13 +5,12 @@ const start = async () => {
   await connectDB(); // Connect to MongoDB
 
   const newReview = new ContentReview({
-    userId: "loss", // Use the ObjectID constructor if required
+    userId: "loss",
     contentId: "hehe",
     serverId: "huhu",
     apiUsed: "IMDB",
     rating: 8.5,
     review: "A well-crafted and engaging story...",
-    // ... other fields
   });
 
   try {
