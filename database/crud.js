@@ -1,16 +1,22 @@
 import connectDB from "./config.js"; // Import the connection function
 import ContentReview from "./models.js";
 
-const start = async () => {
+async function new_revyoo(
+  userId,
+  contentId,
+  serverId,
+  apiUsed,
+  rating,
+  review
+) {
   await connectDB(); // Connect to MongoDB
-
   const newReview = new ContentReview({
-    userId: "loss",
-    contentId: "hehe",
-    serverId: "huhu",
-    apiUsed: "IMDB",
-    rating: 8.5,
-    review: "A well-crafted and engaging story...",
+    userId: userId,
+    contentId: contentId,
+    serverId: serverId,
+    apiUsed: apiUsed,
+    rating: rating,
+    review: review,
   });
 
   try {
@@ -19,6 +25,13 @@ const start = async () => {
   } catch (err) {
     console.error("Error saving content review:", err);
   }
-};
+}
 
-await start();
+await new_revyoo(
+  "loss",
+  "hehe",
+  "huhu",
+  "IMDB",
+  8.5,
+  "A well-crafted and engaging story..."
+);
